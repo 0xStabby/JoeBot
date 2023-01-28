@@ -102,7 +102,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-3. Enter your BOT_TOKEN(from @BotFather) in `.env`
+3. Enter your BOT_TOKEN(from [@BotFather](https://t.me/BotFather)) in `.env`
    ```js
    const BOT_TOKEN = 'ENTER YOUR TOKEN';
    ```
