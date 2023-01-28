@@ -163,7 +163,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [ChatGPT]()
+* [ChatGPT](https://chat.openai.com/chat)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
