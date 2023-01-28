@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-JoeBot compliments people when I type "/joe"
+[JoeBot](https://t.me/JoeMotherFuckingBot) compliments people when I type "/joe"
 For memes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -155,6 +155,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [@0xStabby](https://twitter.com/0xStabby)
 
 [https://github.com/0xStabby/JoeBot](https://github.com/0xStabby/JoeBot)
+
+[JoeBot](https://t.me/JoeMotherFuckingBot) on telegram
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
