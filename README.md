@@ -180,6 +180,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [issues-shield]: https://img.shields.io/github/issues/0xStabby/JoeBot.svg?style=for-the-badge
 [issues-url]: https://github.com/0xStabby/JoeBot/issues
 [license-shield]: https://img.shields.io/github/license/0xStabby/JoeBot.svg?style=for-the-badge
-[license-url]: https://github.com/0xStabby/JoeBot/blob/master/LICENSE.txt
+[license-url]: https://github.com/0xStabby/JoeBot/blob/main/LICENSE.txt
 [NodeJS.org]: https://img.shields.io/static/v1?style=for-the-badge&message=Node.js&color=339933&logo=Node.js&logoColor=FFFFFF&label=
 [NodeJS-url]: https://nodejs.org 
