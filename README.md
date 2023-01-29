@@ -18,7 +18,7 @@
 <h3 align="center">JoeBot</h3>
 
   <p align="center">
-    A telegram bot that compliments people when I type "/joe" For memes
+    A telegram bot that compliments people when they type "/joe" For memes
     <br />
     <a href="https://github.com/0xStabby/JoeBot"><strong>Explore the docs »</strong></a>
     <br />
