@@ -36,14 +36,3 @@ process.on("SIGINT", () => {
     clearInterval(intervalId);
     process.exit();
 });
-
-/*
-bot.onText(/\/tiktok/, (msg) => {
-    const randomIndex = Math.floor(Math.random() * videos.length);
-    const video = videos[randomIndex];
-    bot.sendVideo(msg.chat.id, video.filePath).then(() => {
-        bot.sendMessage(msg.chat.id, `${video.link}`);
-        bot.sendMessage(msg.chat.id, "Don't forget to like, comment, and share with your friends!! 🔥🎥");
-    });
-});
-*/
