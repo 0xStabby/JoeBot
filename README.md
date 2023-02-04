@@ -23,7 +23,7 @@
     <a href="https://github.com/0xStabby/JoeBot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/0xStabby/JoeBot">View Demo</a>
+    <a href=""https://t.me/JoeMotherFuckingBot>View Demo</a>
     ·
     <a href="https://github.com/0xStabby/JoeBot/issues">Report Bug</a>
     ·
@@ -114,7 +114,8 @@ This is an example of how to list things you need to use the software and how to
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Compliments people when I type "/joe" For memes
+- [x] Compliments people when users type "/joe"
+- [x] Shares tiktok video and link from users type "/tiktok"
 
 See the [open issues](https://github.com/0xStabby/JoeBot/issues) for a full list of proposed features (and known issues).
 
