@@ -23,7 +23,7 @@
     <a href="https://github.com/0xStabby/JoeBot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href=""https://t.me/JoeMotherFuckingBot>View Demo</a>
+    <a href="https://t.me/JoeMotherFuckingBot">View Demo</a>
     ·
     <a href="https://github.com/0xStabby/JoeBot/issues">Report Bug</a>
     ·
