@@ -19,7 +19,7 @@ const sendRandomVideo = (chatId) => {
     const video = videos[randomIndex];
     bot.sendVideo(chatId, video.filePath).then(() => {
         bot.sendMessage(chatId, `Link: ${video.link}`);
-        bot.sendMessage(chatId, "Don't forget to like, share, comment, subscribe, and engage with us! 🔥🎥🎉");
+        bot.sendMessage(chatId, "Don't forget to like, share, comment, subscribe, and engage with us! 🔥🎥");
     });
 };
 
