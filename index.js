@@ -24,7 +24,7 @@ const sendRandomVideo = (chatId) => {
 };
 
 const intervalId = setInterval(() => {
-    sendRandomVideo(process.env.CHAT_ID); // replace YOUR_CHAT_ID with the actual chat id you want to send the video to
+    sendRandomVideo(process.env.CHAT_ID);
 }, 2 * 60 * 60 * 1000);
 
 bot.onText(/\/tiktok/, (msg) => {
