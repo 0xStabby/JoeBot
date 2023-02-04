@@ -15,24 +15,25 @@ bot.onText(/\/joe/, (msg) => {
 });
 
 const sendRandomVideo = (chatId) => {
-    const randomIndex = Math.floor(Math.random() * videos.length);
-    const video = videos[randomIndex];
-    bot.sendVideo(chatId, video.filePath).then(() => {
-        bot.sendMessage(chatId, `Link: ${video.link}`);
-        bot.sendMessage(chatId, "Don't forget to like, share, comment, subscribe, and engage with us! 🔥🎥");
+  const randomIndex = Math.floor(Math.random() * videos.length);
+  const video = videos[randomIndex];
+  bot.sendVideo(chatId, video.filePath).then(() => {
+    bot.sendMessage(chatId, `Link: ${video.link}`).then(() => {
+      bot.sendMessage(chatId, "Don't forget to like, share, comment, subscribe, and engage with us! 🔥🎥");
     });
+  });
 };
 
 const intervalId = setInterval(() => {
-    sendRandomVideo(process.env.CHAT_ID);
+  sendRandomVideo(process.env.CHAT_ID);
 }, 2 * 60 * 60 * 1000);
 
 bot.onText(/\/tiktok/, (msg) => {
-    sendRandomVideo(msg.chat.id);
-    console.log("chatid: ", msg.chat.id);
+  sendRandomVideo(msg.chat.id);
+  console.log("chatid: ", msg.chat.id);
 });
 
 process.on("SIGINT", () => {
-    clearInterval(intervalId);
-    process.exit();
+  clearInterval(intervalId);
+  process.exit();
 });
