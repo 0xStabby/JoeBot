@@ -6,13 +6,15 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const token = process.env.BOT_TOKEN;
+const CHAT_ID = process.env.CHAT_ID
 
 const bot = new TelegramBot(token, { polling: true });
 
-bot.onText(/\/joe/, (msg) => {
+const sendComplement = (chatId) => {
   const randomIndex = Math.floor(Math.random() * compliments.length);
-  bot.sendMessage(msg.chat.id, compliments[randomIndex]);
-});
+  bot.sendMessage(chatId, compliments[randomIndex]);
+  console.log("complement sent");
+}
 
 const sendRandomVideo = (chatId) => {
   const randomIndex = Math.floor(Math.random() * videos.length);
@@ -24,14 +26,42 @@ const sendRandomVideo = (chatId) => {
   });
 };
 
-const intervalId = setInterval(() => {
-  sendRandomVideo(process.env.CHAT_ID);
-}, 2 * 60 * 60 * 1000);
+let intervalId;
+const startInterval = () => {
+  intervalId = setInterval(() => {
+    sendRandomVideo(CHAT_ID);
+  }, 60 * 60 * 1000); // then each hour
+};
 
-bot.onText(/\/tiktok/, (msg) => {
-  sendRandomVideo(msg.chat.id);
-  console.log("chatid: ", msg.chat.id);
+setTimeout(() => {
+  sendRandomVideo(CHAT_ID);
+  startInterval();
+}, 15 * 60 * 1000); // first in 15 minutes
+
+const startComplementInterval = () => {
+  intervalId = setInterval(() => {
+    sendRandomVideo(CHAT_ID);
+  }, 60 * 60 * 1000); // then each hour
+};
+
+setTimeout(() => {
+  sendComplement(CHAT_ID);
+  startComplementInterval();
+}, (60 * 1000)/2); // first in 30 seconds
+
+bot.onText(/\/joe/, (msg) => {
+  sendComplement(msg.chat.id);
 });
+
+bot.onText(/\/video/, (msg) => {
+  sendRandomVideo(msg.chat.id);
+});
+
+/*
+bot.onText(/\/video/, (msg) => {
+  sendRandomVideo(msg.chat.id);
+});
+*/
 
 process.on("SIGINT", () => {
   clearInterval(intervalId);
