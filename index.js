@@ -47,21 +47,15 @@ const startComplementInterval = () => {
 setTimeout(() => {
   sendComplement(CHAT_ID);
   startComplementInterval();
-}, (60 * 1000)/2); // first in 30 seconds
+}, (60 * 60 * 1000)); // edit as desired for first run
 
 bot.onText(/\/joe/, (msg) => {
   sendComplement(msg.chat.id);
 });
 
-bot.onText(/\/video/, (msg) => {
+bot.onText(/\/tiktok/, (msg) => {
   sendRandomVideo(msg.chat.id);
 });
-
-/*
-bot.onText(/\/video/, (msg) => {
-  sendRandomVideo(msg.chat.id);
-});
-*/
 
 process.on("SIGINT", () => {
   clearInterval(intervalId);
